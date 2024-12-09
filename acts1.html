@@ -1,0 +1,87 @@
+import React from 'react';
+import { Card, CardHeader, CardContent } from '@/components/ui/card';
+
+const Acts1Page = () => {
+  return (
+    <div className="max-w-7xl mx-auto p-6 space-y-8">
+      {/* Chapter Header */}
+      <div className="text-center mb-8">
+        <h1 className="text-4xl font-bold mb-4">Acts Chapter 1</h1>
+        <p className="text-xl text-gray-600">From Resurrection to Pentecost</p>
+      </div>
+
+      {/* Main Content Grid */}
+      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        {/* Left Column - Timeline */}
+        <Card className="lg:col-span-2">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">Timeline of Events</h2>
+          </CardHeader>
+          <CardContent>
+            <div className="bg-blue-900 text-white p-6 rounded-lg">
+              {/* Placeholder for Timeline SVG */}
+              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
+                Timeline Visualization Will Be Placed Here
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Right Column - Quick Reference */}
+        <Card>
+          <CardHeader>
+            <h2 className="text-2xl font-bold">Key References</h2>
+          </CardHeader>
+          <CardContent>
+            <ul className="space-y-4">
+              <li>
+                <h3 className="font-semibold">The Promise of the Spirit</h3>
+                <p className="text-blue-600">Acts 1:4-5</p>
+              </li>
+              <li>
+                <h3 className="font-semibold">The Great Commission</h3>
+                <p className="text-blue-600">Acts 1:8</p>
+              </li>
+              <li>
+                <h3 className="font-semibold">The Ascension</h3>
+                <p className="text-blue-600">Acts 1:9-11</p>
+              </li>
+            </ul>
+          </CardContent>
+        </Card>
+
+        {/* Full Width - Promise Fulfillment Matrix */}
+        <Card className="lg:col-span-3">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">Promise Fulfillment Matrix</h2>
+          </CardHeader>
+          <CardContent>
+            <div className="bg-blue-900 text-white p-6 rounded-lg">
+              {/* Placeholder for Matrix SVG */}
+              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
+                Promise-Fulfillment Matrix Will Be Placed Here
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+
+        {/* Geographic Expansion */}
+        <Card className="lg:col-span-3">
+          <CardHeader>
+            <h2 className="text-2xl font-bold">Geographic Expansion</h2>
+          </CardHeader>
+          <CardContent>
+            <div className="bg-blue-900 text-white p-6 rounded-lg">
+              {/* Placeholder for Map SVG */}
+              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
+                Geographic Expansion Map Will Be Placed Here
+              </div>
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    </div>
+  );
+};
+
+export default Acts1Page;
