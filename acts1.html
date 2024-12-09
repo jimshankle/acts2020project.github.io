@@ -1,87 +1,189 @@
-import React from 'react';
-import { Card, CardHeader, CardContent } from '@/components/ui/card';
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acts Chapter 1 - Acts 2020 Project</title>
+    <style>
+        :root {
+            --deep-blue: #1a365d;
+            --light-blue: #3B5B8F;
+            --gold: #fbd38d;
+        }
 
-const Acts1Page = () => {
-  return (
-    <div className="max-w-7xl mx-auto p-6 space-y-8">
-      {/* Chapter Header */}
-      <div className="text-center mb-8">
-        <h1 className="text-4xl font-bold mb-4">Acts Chapter 1</h1>
-        <p className="text-xl text-gray-600">From Resurrection to Pentecost</p>
-      </div>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
 
-      {/* Main Content Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-        {/* Left Column - Timeline */}
-        <Card className="lg:col-span-2">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">Timeline of Events</h2>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-blue-900 text-white p-6 rounded-lg">
-              {/* Placeholder for Timeline SVG */}
-              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
-                Timeline Visualization Will Be Placed Here
-              </div>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .chapter-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .chapter-header h1 {
+            font-size: 2.5rem;
+            color: var(--deep-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .chapter-header p {
+            font-size: 1.25rem;
+            color: #666;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .card-header {
+            padding: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .card-header h2 {
+            margin: 0;
+            color: var(--deep-blue);
+            font-size: 1.5rem;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .visualization-container {
+            background-color: var(--deep-blue);
+            padding: 1.5rem;
+            border-radius: 8px;
+            color: white;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .references-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .references-list li {
+            margin-bottom: 1rem;
+        }
+
+        .references-list h3 {
+            margin: 0;
+            color: var(--deep-blue);
+            font-size: 1.1rem;
+        }
+
+        .references-list p {
+            margin: 0.25rem 0 0;
+            color: var(--light-blue);
+        }
+
+        .full-width {
+            grid-column: 1 / -1;
+        }
+
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="chapter-header">
+            <h1>Acts Chapter 1</h1>
+            <p>From Resurrection to Pentecost</p>
+        </header>
+
+        <div class="grid">
+            <!-- Timeline Section -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Timeline of Events</h2>
+                </div>
+                <div class="card-content">
+                    <div class="visualization-container">
+                        [Timeline SVG Will Go Here]
+                    </div>
+                </div>
             </div>
-          </CardContent>
-        </Card>
 
-        {/* Right Column - Quick Reference */}
-        <Card>
-          <CardHeader>
-            <h2 className="text-2xl font-bold">Key References</h2>
-          </CardHeader>
-          <CardContent>
-            <ul className="space-y-4">
-              <li>
-                <h3 className="font-semibold">The Promise of the Spirit</h3>
-                <p className="text-blue-600">Acts 1:4-5</p>
-              </li>
-              <li>
-                <h3 className="font-semibold">The Great Commission</h3>
-                <p className="text-blue-600">Acts 1:8</p>
-              </li>
-              <li>
-                <h3 className="font-semibold">The Ascension</h3>
-                <p className="text-blue-600">Acts 1:9-11</p>
-              </li>
-            </ul>
-          </CardContent>
-        </Card>
-
-        {/* Full Width - Promise Fulfillment Matrix */}
-        <Card className="lg:col-span-3">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">Promise Fulfillment Matrix</h2>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-blue-900 text-white p-6 rounded-lg">
-              {/* Placeholder for Matrix SVG */}
-              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
-                Promise-Fulfillment Matrix Will Be Placed Here
-              </div>
+            <!-- Key References -->
+            <div class="card">
+                <div class="card-header">
+                    <h2>Key References</h2>
+                </div>
+                <div class="card-content">
+                    <ul class="references-list">
+                        <li>
+                            <h3>The Promise of the Spirit</h3>
+                            <p>Acts 1:4-5</p>
+                        </li>
+                        <li>
+                            <h3>The Great Commission</h3>
+                            <p>Acts 1:8</p>
+                        </li>
+                        <li>
+                            <h3>The Ascension</h3>
+                            <p>Acts 1:9-11</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </CardContent>
-        </Card>
 
-        {/* Geographic Expansion */}
-        <Card className="lg:col-span-3">
-          <CardHeader>
-            <h2 className="text-2xl font-bold">Geographic Expansion</h2>
-          </CardHeader>
-          <CardContent>
-            <div className="bg-blue-900 text-white p-6 rounded-lg">
-              {/* Placeholder for Map SVG */}
-              <div className="h-64 flex items-center justify-center border-2 border-dashed border-blue-400 rounded">
-                Geographic Expansion Map Will Be Placed Here
-              </div>
+            <!-- Full Width - Promise Fulfillment Matrix -->
+            <div class="card full-width">
+                <div class="card-header">
+                    <h2>Promise Fulfillment Matrix</h2>
+                </div>
+                <div class="card-content">
+                    <div class="visualization-container">
+                        [Matrix SVG Will Go Here]
+                    </div>
+                </div>
             </div>
-          </CardContent>
-        </Card>
-      </div>
+
+            <!-- Geographic Expansion -->
+            <div class="card full-width">
+                <div class="card-header">
+                    <h2>Geographic Expansion</h2>
+                </div>
+                <div class="card-content">
+                    <div class="visualization-container">
+                        [Map SVG Will Go Here]
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-  );
-};
-
-export default Acts1Page;
+</body>
+</html>
