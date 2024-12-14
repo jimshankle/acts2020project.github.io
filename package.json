@@ -1,0 +1,41 @@
+{
+  "name": "acts2020project",
+  "version": "1.0.0",
+  "description": "Interactive Biblical scholarship demonstration site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^14.0.0",
+    "tailwindcss": "^3.3.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "lucide-react": "0.263.1",
+    "recharts": "^2.0.0",
+    "@/components/ui": "*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.2.0",
+    "typescript": "^5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jimshankle/acts2020project.github.io.git"
+  },
+  "keywords": [
+    "bible",
+    "acts",
+    "biblical-scholarship",
+    "react",
+    "interactive"
+  ],
+  "author": "Jim Shankle",
+  "license": "MIT"
+}
